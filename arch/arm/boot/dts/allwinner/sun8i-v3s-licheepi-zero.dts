@@ -50,6 +50,7 @@
 
 	aliases {
 		serial0 = &uart0;
+		spi32766 = &spi0;
 	};
 
 	chosen {
