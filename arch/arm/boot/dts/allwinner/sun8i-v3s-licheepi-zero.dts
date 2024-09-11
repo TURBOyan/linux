@@ -57,6 +57,21 @@
 		stdout-path = "serial0:115200n8";
 	};
 
+	ir_gpio_rx {
+		compatible  = "gpio-ir-receiver";
+		gpios = <&pio 1 5 GPIO_ACTIVE_LOW>; /* PB5 */
+		/*active_low = <1>;*/
+		linux,rc-map-name = "rc-tevii-nec";
+		status = "okay";
+	};
+
+	ir_gpio_tx {
+		compatible  = "gpio-ir-tx";
+		gpios = <&pio 1 4 GPIO_ACTIVE_LOW>; /* PB4 */
+		/*active_low = <1>;*/
+		status = "okay";
+	};
+
 	leds {
 		compatible = "gpio-leds";
 
