@@ -55,7 +55,7 @@
 
 	leds {
 		/* The LEDs use PG0~2 pins, which conflict with MMC1 */
-		status = "disabled";
+		status = "okay";
 	};
 
 	ir_gpio_rx {
@@ -116,5 +116,5 @@
 	broken-cd;
 	bus-width = <4>;
 	vmmc-supply = <&reg_vcc3v3>;
-	status = "okay";
+	status = "disabled";
 };
