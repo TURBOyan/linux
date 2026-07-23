@@ -109,7 +109,7 @@
 	};
 };
 
-&ohci0 {
+&ohci {
 	status = "okay";
 };
 
